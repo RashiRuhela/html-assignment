@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+ 
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.container {
+  padding: 16px;
+  background-color: white;
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+
+
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+
+a {
+  color: dodgerblue;
+}
+
+.signin {
+  background-color:white;
+  text-align: center;
+}
+.head1{
+text-align : center;
+border:2px black solid;
+background-color:#04AA6D;
+}
+.Main{
+justify-content.center;
+align-items: center;
+display:flex;
+border:2px black solid;
+}
+.call_for{
+width: 700px;
+}
+
+</style>
+</head>
+<body>
+<table>
+<tr>
+<td>
+<div class = "Main">
+<div class = "call_for">
+
+<form action="/action_page.php">
+  <div  class="container">
+     <div class =" head1 ">
+	     <h1>  Registration Form</h1>
+         <p>Please fill in this form to create an account.</p>
+	</div>
+	
+    <hr> 
+    
+     
+	<label for="Name"><b>Name</b></label>
+    <input type="text" placeholder="Enter Name" name="Name" id="Name" required> <br>
+	
+	
+	 <label for="Mobile Number"><b> Mobile Number</b></label>
+    <input type="text" placeholder="Enter Number" name="Number" id="Number" required>
+	
+	 <label for="Address"><b>Address</b></label>
+    <input type="text" placeholder="Enter Address" name="Address" id="Address" required>
+	
+	 <label for="DOB "><b>DOB</b></label><br>
+    <input type="date" placeholder="Enter DOB" name="DOB" id="DOB" required> <br> <br>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+    <label for="psw-repeat"><b>Confirm Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+    <hr>
+
+    <button type="submit" class="registerbtn">Register</button>
+  </div>
+  
+  <div class="container signin">
+    <p>Already have an account? <a href="#">Sign in</a>.</p>
+  </div>
+</form>
+<div>
+</div>
+</div>
+</div>
+
+</td>
+<td>
+<img src="C:\Users\student\Desktop\p.avif" alt="image" width=700px height=845px>
+</td>
+</tr>
+
+</table>
+
+</body>
+</html>
